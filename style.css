@@ -3,4 +3,51 @@ body{
 }
 
 
+#img{
+    text-align: center;
+    padding-top: 50px;
+}
+
+img{
+    width: 142px;
+    height: 142px;
+}
+
+
+h1{
+    color: #EFAE2E;
+    padding-top: 100px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top:30px ;
+}
+
+#from{
+    width: 148px;
+    height: 60px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+#to{
+    width: 148px;
+    height: 60px;
+    font-size: 24px;
+}
+
+#amount{
+    Width:322px;
+    Height:60px;
+}
+
+#botao{
+    background-color: #EFAE2E;
+    width: 322px;
+    height: 60px;
+    font-size: 24px;
+}
 
