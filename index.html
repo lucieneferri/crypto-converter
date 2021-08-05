@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Converter</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+        </style>
 </head>
 <body>
     <div id="img">
@@ -12,13 +16,13 @@
     </div>
 
 
-    <p>
-        <h1>CRYPTO CONVERTER</h1>
-    </p>
+    
+    <h1>CRYPTO CONVERTER</h1>
+    
     
     <div id="container">
+        
         <div id="from">
-            <label for="">From:</label>
             <select name="" id="from">
             <option value="real">BRL</option>
             <option value="dolar">USD</option>
@@ -26,7 +30,7 @@
         </div>
 
         <div id="to">
-            <label for="">To:</label>
+            
             <select name="" id="to">
                 <option value="btc">BitCoin</option>
                 <option value="eth">Ethereum</option>
@@ -35,15 +39,16 @@
             </select>
         </div>
 
-        <div>
-            <label for="">Amount</label>
-            <input type="text" name="" id="amount">
-            
-        </div>
-        <input type="button" value="CONVERT" id="botao">
+        <input type="text" name="" id="amount">
 
-        TOTAL
+    <button>CONVERT</button>
+    
+    <div id="resultado">
+        00,00 USD = 00,00 BRL
+    </div>
+
     </div>
     
+        
 </body>
 </html>
