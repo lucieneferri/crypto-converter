@@ -11,40 +11,39 @@
         </style>
 </head>
 <body>
+<section>
+
     <div id="img">
         <img src="img/money.png" alt="" >
     </div>
 
-
-    
     <h1>CRYPTO CONVERTER</h1>
-    
-    
-    <div id="container">
-        
-        <div id="from">
-            <select name="" id="from">
-            <option value="real">BRL</option>
-            <option value="dolar">USD</option>
-        </select>
-        </div>
 
-        <div id="to">
+</section>
+    
+    <div class="container">
+        
+            <select class="coin-selector" name="" id="from">
+                <option value="real">BRL</option>
+                <option value="dolar">USD</option>
+            </select>
+
+        
             
-            <select name="" id="to">
+            <select class="coin-selector" name="" id="to">
                 <option value="btc">BitCoin</option>
                 <option value="eth">Ethereum</option>
                 <option value="doge">DodgeCoin</option>
                 <option value="bnb">BNB</option>
             </select>
-        </div>
+        
 
-        <input type="text" name="" id="amount">
+        <input class="text-field" type="text" name="" id="amount">
 
-    <button>CONVERT</button>
+    <button id="convert-button">CONVERT</button>
     
     <div id="resultado">
-        00,00 USD = 00,00 BRL
+       <span>00,00 USD = 00,00 BRL</span>
     </div>
 
     </div>
