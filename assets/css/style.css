@@ -39,15 +39,17 @@ select:hover{
     width: calc(50% - 10px);
     height: 60px;
     font-size: 20px;
-    border-radius: 5%;
+    border-radius: 5px;
     border: 1px solid #EFAE2E;
 }
 
 .text-field{
     Width:100%;
     Height:60px;
-    border-radius: 5%;
+    border-radius: 5px;
     border: 2px solid #EFAE2E;
+    font-size: 20px;
+    color: #adaca9;
 }
 
 input:hover{
@@ -60,7 +62,7 @@ button{
     width: 322px;
     height: 60px;
     font-size: 24px;
-    border-radius: 5%;
+    border-radius: 5px;
     border: 2px solid #EFAE2E;
 }
 
