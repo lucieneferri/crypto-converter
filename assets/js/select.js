@@ -1,18 +1,10 @@
-//Criar as opções de selects nos inputs através de uma API
-
-/*Criar uma função que faça essa busca para mim. Para isso preciso buscar
-os elementos no HTML
-*/
+import { getCurrenciesList } from "./api"
 
 const entrySelect = document.querySelector('#from')
 const outpuSelect = document.querySelector('#to')
 
 async function creatOption(){
-    //buscar o dado da API e guardar em uma variável
-    const response = await fetch('http://api.coinlayer.com/list?access_key=566dd89ebc2cb2fd51f869b4103e5cdf')
-    const data = await response.json()
-    console.log(data)
-
+    const data = await getCurrenciesList()
     //transformar o Objeto retornado em um array para poder usar o FOREACH
     //o método utilizado é o Object.keys()
     //Primeiro select
@@ -40,12 +32,6 @@ async function creatOption(){
         option.innerHTML = `${data.fiat[fiat]} (${fiat})`
         outpuSelect.appendChild(option)
     })
-
-
-    
-
-    
-    
 }
 
 creatOption()
